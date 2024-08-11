@@ -1,0 +1,36 @@
+ body{
+   background-color: #faf6f4;
+}
+
+h1{
+   color: #000;
+   font-family: Roboto;
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.container {
+   display: flex; /* Usa Flexbox para organizar os itens dentro do contêiner */
+   height: 100vh; /* Ocupa a altura total da viewport */
+}
+
+.image-container {
+   flex: 1; /* Ocupa metade do espaço disponível */
+   display: flex; /* Usa Flexbox para centralizar a imagem dentro do contêiner */
+   align-items: center; /* Centraliza a imagem verticalmente */
+   justify-content: center; /* Centraliza a imagem horizontalmente */
+   background-color: #f0f0f0; /* Cor de fundo opcional */
+}
+
+.espacoforms {
+   flex: 1; /* Ocupa metade do espaço disponível */
+   display: flex; /* Usa Flexbox para centralizar o conteúdo dentro do formulário */
+   flex-direction: column; /* Organiza os elementos em coluna */
+   align-items: center; /* Centraliza horizontalmente o conteúdo */
+   justify-content: center; /* Centraliza verticalmente o conteúdo */
+   padding: 20px; /* Adiciona espaço interno ao redor do formulário */
+   background-color: #fff; /* Cor de fundo do formulário */
+   box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o formulário */
+}
