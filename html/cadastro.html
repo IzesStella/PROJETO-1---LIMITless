@@ -7,43 +7,63 @@
     <link rel="stylesheet" href="/css/cadastro.css">
 </head>
 <body>
-    <h1> Criar conta </h1>
-    <h2> preencha os campos com seus dados.  </h2>
 
-    <div class="container">
-        <div class="image-container">
-            <img src="" alt="Imagem de Roupas">
-        </div>
-        <div class="espacoforms">
+    <div class="image-container">
+         <img src="image 5.png" alt="Imagem de Roupas">
+    </div>
+        <div class="form-container">
+            <div class="espacoforms">
+        <h1>Criar conta</h1>
+        <h2>(Preencha os campos com seus dados)</h2>
 
-    <form method="post">
-        <label for="nomecompleto">Nome Completo:</label>
-        <input type="text" id="nomecompleto" name="nomecompleto" required> <br>
+        <form method="post">
+            <div class="formgrupo">
+                <label for="nomecompleto">Nome Completo:</label>
+                <input type="text" id="nomecompleto" name="nomecompleto" required>
+            </div>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required> <br>
+            <div class="linhaform">
+                <div class="formgrupo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required> <br>
+                <div class="formgrupo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
 
-        <label for="endereco">Endereço:</label>
-        <input type="text" id="endereco" name="endereco" required> <br>
+            <div class="linhaform">
+                <div class="formgrupo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>
+                <div class="formgrupo">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" required>
+                </div>
+            </div>
 
-        <label for="bairro">Bairro:</label>
-        <input type="text" id="bairro" name="bairro" required> <br>
+            <div class="linhaform">
+                <div class="formgrupo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <div class="formgrupo">
+                    <label for="confirmarsenha">Confirmar Senha:</label>
+                    <input type="password" id="confirmarsenha" name="confirmarsenha" required>
+                </div>
+            </div>
 
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required> <br>
-
-        <label for="confirmarsenha">Confirmar Senha:</label>
-        <input type="password" id="confirmarsenha" name="confirmarsenha" required> <br>
-
-        <label for="pix">Chave Pix (aleatória):</label>
-        <input type="text" id="pix" name="pix" required> <br>
-
-        <button type="submit">Criar Cadastro </button> 
-        
-    </form>
+            <div class="formgrupo">
+                <label for="pix">Chave Pix (aleatória):</label>
+                <input type="text" id="pix" name="pix" required>
+            </div>
+            <button type="submit">Criar Cadastro</button> 
+        </form>
+</div>
+</div>
 
     
 </body>
