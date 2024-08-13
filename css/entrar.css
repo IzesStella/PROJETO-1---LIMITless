@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante que o body ocupe toda a altura da viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 90%; /* Ajusta a largura para 90% da tela em dispositivos menores */
+    max-width: 400px; /* Largura máxima em telas maiores */
+    color: #000000;
+    text-align: left;
+  
+}
+
+.formentrar {
+    background: rgba(196, 194, 194, 0.5); /* Fundo semitransparente para o formulário */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(32, 27, 27, 0.5); /* Adiciona sombra ao box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Largura 100% para se ajustar ao container */
+    box-sizing: border-box; /* Inclui o padding na largura do elemento */
+    height: 500px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: #000000; /* Torna o texto branco para contraste */
+}
+
+button {
+    width: 50%; /* Reduz a largura do botão */
+    padding: 10px;
+    background-color: #75AA71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto 0 auto; 
+    display: block;
+}
+
+button:hover {
+    background-color: #636363;
+}
