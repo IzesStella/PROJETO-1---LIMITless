@@ -1,4 +1,8 @@
- body{
+*{
+   background-image: url('imagem.png');
+}
+
+body{
    background-color: #faf6f4;
    margin: 0;
    padding: 0;
@@ -37,7 +41,7 @@
 .espacoforms {
    max-width: 600px;
    padding: 20px;
-   background: rgba(174, 202, 225, 0.00); /* Transparente */
+   background: rgba(0, 0, 0, 0); /* Transparente */
    border-radius: 20px;
    border: 0.5px solid #A3AAB8;
    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
