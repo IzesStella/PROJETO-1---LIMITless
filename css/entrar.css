@@ -1,3 +1,6 @@
+*{
+    background-image: url('imagem.png');
+ }
 body {
     margin: 0;
     padding: 0;

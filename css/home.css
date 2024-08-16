@@ -1,0 +1,8 @@
+a{
+    text-decoration: none; 
+color: rgba(21, 200, 18, 0.81); 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
