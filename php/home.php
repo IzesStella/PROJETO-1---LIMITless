@@ -10,17 +10,19 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo grande.png">
+            <img src="logo barra.png">
         </div>
-        <ul>
+
+        <form class="search-form"> 
+            <input type="text" placeholder="Procurar itens...">
+        </form>
+
         <nav>
-          </li><a href="/html/cadastro.html">Cadastre-se</a></li> 
-        </li><a href="/html/sobrenos.html">Sobre Nós</a></li>
-          </li><a href="/html/entrar.html">Entrar </a></li> 
-        </ul>
-    <form class="search-form"> 
-        <input type="text" placeholder="Procurar itens...">
-    </form>
+            <ul>
+                </li><a href="/html/sobrenos.php">Sobre Nós</a></li>
+                </li><a href="/html/entrar.php">Entrar </a></li> 
+                </li><a href="/html/cadastro.php">Cadastre-se</a></li> 
+            </ul>
         </nav>
        <nav>
             <li>
