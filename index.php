@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="../css/index.css">
 
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo barra.png">
+            <img src="../php/logo barra.png">
         </div>
 
         <form class="search-form"> 
@@ -19,9 +19,9 @@
 
         <nav>
             <ul>
-                </li><a href="/html/sobrenos.php">Sobre Nós</a></li>
-                </li><a href="/html/entrar.php">Entrar </a></li> 
-                </li><a href="/html/cadastro.php">Cadastre-se</a></li> 
+                </li><a href="/php/sobrenos.php">Sobre Nós</a></li>
+                </li><a href="/php/entrar.php">Entrar </a></li> 
+                </li><a href="/php/cadastro.php">Cadastre-se</a></li> 
             </ul>
         </nav>
        <nav>

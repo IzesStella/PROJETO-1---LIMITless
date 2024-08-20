@@ -14,11 +14,13 @@
        
         <nav>
             <ul>
-                </li><a href="/html/sobrenos.php">Sobre Nós</a></li>
-                </li><a href="/html/entrar.php">Entrar </a></li> 
-                </li><a href="/html/cadastro.php">Cadastre-se</a></li> 
+                </li><a href="/php/sobrenos.php">Sobre Nós</a></li>
+                </li><a href="/php/entrar.php">Entrar </a></li> 
+                </li><a href="/php/cadastro.php">Cadastre-se</a></li> 
             </ul>
         </nav>    
+    </header>    
+    
 
     
 </body>
