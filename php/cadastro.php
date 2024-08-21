@@ -1,3 +1,30 @@
+<?php
+require_once 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $nome = $_POST['nome'];
+    $telefone = $_POST['telefone'];
+    $bairro = $_POST['bairro'];
+    $email = $_POST['email'];
+    $username = $_POST['user'];
+    $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
+    
+    $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE user = ?");
+    $stmt->execute([$username]);
+    if ($stmt->rowCount() > 0) {
+        echo "Nome de usuário já existe!";
+    } else {
+        $stmt = $pdo->prepare("INSERT INTO USUARIOS (nome, telefone, bairro, email, user, senha) VALUES (?, ?, ?, ?, ?, ?)");
+        if ($stmt->execute([$nome, $telefone, $bairro, $email, $username, $senha])) {
+            echo "Usuário registrado com sucesso!";
+            header('Location: entrar.php');
+        } else {
+            echo "Erro ao registrar usuário.";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +45,8 @@
 
         <form method="post">
             <div class="formgrupo">
-                <label for="nomecompleto">Nome Completo:</label>
-                <input type="text" id="nomecompleto" name="nomecompleto" required>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
             </div>
 
             <div class="linhaform">
@@ -29,19 +56,15 @@
                 </div>
 
                 <div class="formgrupo">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" required>
                 </div>
             </div>
 
             <div class="linhaform">
                 <div class="formgrupo">
-                    <label for="endereco">Endereço:</label>
-                    <input type="text" id="endereco" name="endereco" required>
-                </div>
-                <div class="formgrupo">
-                    <label for="bairro">Bairro:</label>
-                    <input type="text" id="bairro" name="bairro" required>
+                    <label for="endereco">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
             </div>
 
@@ -57,8 +80,8 @@
             </div>
 
             <div class="formgrupo">
-                <label for="nomeusuario">Nome de Usuário</label>
-                <input type="text" id="nomeusuario" name="nomeusuario" required>
+                <label for="user">Nome de Usuário</label>
+                <input type="text" id="user" name="user" required>
             </div>
             <button type="submit">Criar Cadastro</button> 
         </form>
