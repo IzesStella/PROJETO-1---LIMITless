@@ -11,11 +11,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->execute([$username]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    // Verifica se a senha está correta
-    if ($user && password_verify($senha, $user['senha'])) {
-        $_SESSION['username_id'] = $username['id'];
-        $_SESSION['user'] = $user['user'];
-        header('Location: /index.php');
+    // Verifica se o hash da senha foi recuperado corretamente
+    if ($user && isset($user['SENHA'])) {
+        // Verifica se a senha está correta
+        if (password_verify($senha, $user['SENHA'])) {
+            $_SESSION['username_id'] = $user['id'];
+            $_SESSION['user'] = $user['user'];
+            header('Location: /index.php');
+            exit;
+        } else {
+            echo "Nome de usuário ou senha incorretos!";
+        }
     } else {
         echo "Nome de usuário ou senha incorretos!";
     }
@@ -33,22 +39,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <body>
         
             <div class="background-layer"></div>
-            
             <div class="container">
                 <div class="formentrar">
                     <div class="image-container">
-                        <img src="logo grande.png" alt="logo">
+                        <img src="img/logo grande.png" alt="logo">
                     </div><br>
                     <form method="post">
-        
-                        <label for="text">Username:</label>
-                        <input type="text" id="username" name="username" required> <br>
+                        <label for="user">Username:</label>
+                        <input type="text" id="user" name="user" required> <br>
         
                         <label for="senha">Senha:</label>
                         <input type="password" id="senha" name="senha" required> <br>
         
                         <button type="submit">Entrar</button> 
-                
                     </form>
                 </div>        
             </div>  

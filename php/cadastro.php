@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
 
     <div class="image-container">
-         <img src="image 5.png" alt="Imagem de Roupas">
+         <img src="img/image 5.png" alt="Imagem de Roupas">
     </div>
         <div class="form-container">
             <div class="espacoforms">
