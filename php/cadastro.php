@@ -44,11 +44,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h2>(Preencha os campos com seus dados)</h2>
 
         <form method="post">
+            
             <div class="formgrupo">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" required>
+                <br>
+                <label for="endereco">E-mail:</label>
+                <input type="email" id="email" name="email" required>
             </div>
-
+            
             <div class="linhaform">
                 <div class="formgrupo">
                     <label for="telefone">Telefone:</label>
@@ -61,12 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
             </div>
 
-            <div class="linhaform">
-                <div class="formgrupo">
-                    <label for="endereco">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-            </div>
+           
 
             <div class="linhaform">
                 <div class="formgrupo">
