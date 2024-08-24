@@ -14,9 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
         // Verifica se a senha está correta
         if ($user && password_verify($senha, $user['SENHA'])) {
-            $_SESSION['username_id'] = $user['id'];
-            $_SESSION['user'] = $user['user'];
-            header('Location: /index.php');
+            $_SESSION['user_id'] = $user['ID'];
+            $_SESSION['user'] = $user['USER'];
+            header('Location: /php/index-usuario.php');
             exit;
         } else {
             echo "Nome de usuário ou senha incorretos!";
