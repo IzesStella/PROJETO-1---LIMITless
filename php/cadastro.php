@@ -14,6 +14,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($stmt->rowCount() > 0) {
         echo "Nome de usuário já existe!";
     } else {
+        $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
+        $stmt->execute([$email]);
+        if ($stmt->rowCount() > 0) {
+            echo "E-mail já cadastrado!";
+        } else {
         $stmt = $pdo->prepare("INSERT INTO USUARIOS (nome, telefone, bairro, email, user, senha) VALUES (?, ?, ?, ?, ?, ?)");
         if ($stmt->execute([$nome, $telefone, $bairro, $email, $username, $senha])) {
             echo "Usuário registrado com sucesso!";
@@ -22,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "Erro ao registrar usuário.";
         }
     }
+}
 }
 ?>
 
@@ -99,4 +105,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             event.preventDefault(); // Impede o envio do formulário
         }
     });
+
+    document.querySelector('form').addEventListener('submit', function(event) {
+        const email = document.getElementById('email').value;
+        const confirmarSenha = document.getElementById('confirmarsenha').value;
+    }
 </script>
