@@ -29,10 +29,14 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <nav>
             <ul>
-                <?php if (isset($_SESSION['username_id'])): ?>
-                    <li><a href="#">Chat</a></li>
-                    <li><a href="#">Perfil</a></li> 
-                    <li><a href="/php/logout.php">Logout (<?= $_SESSION['user'] ?>)</a></li>
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    </li><a href="#">Chat</a></li>
+                    </li><a href="#">Perfil</a></li> 
+                    </li><a href="/php/logout.php">Logout</a></li>
+                    <?php else: ?>
+                    </li><a href="/php/sobrenos.php">Sobre Nós</a></li>
+                    </li><a href="/php/entrar.php">Entrar </a></li> 
+                    </li><a href="/php/cadastro.php">Cadastre-se</a></li>
                 <?php endif; ?>
             </ul>
         </nav>
