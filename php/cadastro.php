@@ -67,7 +67,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <div class="formgrupo">
                     <label for="bairro">Bairro:</label>
-                    <input type="text" id="bairro" name="bairro" required>
+                    <select id="bairro" name="bairro" required>
+                        <option value="Agamenon Magalhães">Bairro</option>
+                        <option value="Alto do Céu">Alto do Céu</option>
+                        <option value="Ana de Albuquerque">Ana de Albuquerque</option>
+                        <option value="Araçoiaba">Araçoiaba</option>
+                        <option value="Área Rural de Igarassu">Área Rural de Igarassu</option>
+                        <option value="Bela Vista">Bela Vista</option>
+                        <option value="Bonfim">Bonfim</option>
+                        <option value="Campina de Feira">Campina de Feira</option>
+                        <option value="Centro">Centro</option>
+                        <option value="Cruz De Rebouças">Cruz De Rebouças</option>
+                        <option value="Distrito de Três Ladeiras">Distrito de Três Ladeiras</option>
+                        <option value="Distrito Industrial">Distrito Industrial</option>
+                        <option value="Distrito Nova Cruz">Distrito Nova Cruz</option>
+                        <option value="Encanto Igarassu">Encanto Igarassu</option>
+                        <option value="Inhamã">Inhamã</option>
+                        <option value="Jabacó">Jabacó</option>
+                        <option value="Pancó">Pancó</option>
+                        <option value="Posto de Monta">Posto de Monta</option>
+                        <option value="Rubina">Rubina</option>
+                        <option value="Santa Luzia">Santa Luzia</option>
+                        <option value="Santa Rita">Santa Rita</option>
+                        <option value="Santo Antônio">Santo Antônio</option>
+                        <option value="Saramandaia">Saramandaia</option>
+                        <option value="Sítio dos Marcos">Sítio dos Marcos</option>
+                        <option value="Tabatinga">Tabatinga</option>
+                        <option value="Triunfo">Triunfo</option>
+                        <option value="Umbura">Umbura</option>
+                        <option value="Vila Rural">Vila Rural</option>
                 </div>
             </div>
 
