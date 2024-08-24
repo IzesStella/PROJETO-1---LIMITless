@@ -53,7 +53,7 @@
                 <h2>Mariana Tavares</h2>
                 <div class="link">
                     <a href="https://github.com/marianantavares">
-                        <img id="git" src={giticon} alt="GitHub">
+                    
                     </a>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                 <h2>Lucas Amaro</h2>
                 <div class="link">
                     <a href="https://github.com/lucazle">
-                        <img id="git" src={giticon} alt="GitHub">
+                    
                     </a>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                 <h2>Isabelly Arruda</h2>
                 <div class="link">
                     <a href="https://github.com/IsabellyArrudaa">
-                        <img id="git" src={giticon} alt="GitHub">
+                        
                     </a>
                 </div>
             </div>
@@ -87,9 +87,9 @@
             <img src="dyvamia.jpg" alt="Talita">
             <div class="card-content">
                 <h2>Talita Vitória</h2>
-                <div class="social-link">
+                <div class="link">
                     <a href="https://github.com/Talitavit">
-                        <img id="git" src={giticon} alt="GitHub">
+    
                     </a>
                 </div>
             </div>
