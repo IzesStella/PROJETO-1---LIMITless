@@ -1,7 +1,7 @@
 <?php
 // Inclui o arquivo de conexão com o banco de dados
-require_once 'php/db.php';
-require_once 'php/authenticate.php';
+require_once './php/db.php';
+require_once './php/authenticate.php';
 // Executa a consulta para obter todos os alunos
 $stmt = $pdo->query("SELECT * FROM usuarios");
 // Recupera todos os resultados da consulta como um array associativo

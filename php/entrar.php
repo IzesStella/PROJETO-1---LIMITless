@@ -11,10 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->execute([$username]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    // Verifica se o hash da senha foi recuperado corretamente
-    if ($user && isset($user['SENHA'])) {
+    
         // Verifica se a senha está correta
-        if (password_verify($senha, $user['SENHA'])) {
+        if ($user && password_verify($senha, $user['SENHA'])) {
             $_SESSION['username_id'] = $user['id'];
             $_SESSION['user'] = $user['user'];
             header('Location: /index.php');
@@ -22,12 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             echo "Nome de usuário ou senha incorretos!";
         }
-    } else {
-        echo "Nome de usuário ou senha incorretos!";
-    }
+    
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
         <head>

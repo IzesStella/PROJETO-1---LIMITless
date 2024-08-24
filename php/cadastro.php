@@ -65,8 +65,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
             </div>
 
-           
-
             <div class="linhaform">
                 <div class="formgrupo">
                     <label for="senha">Senha:</label>
@@ -90,3 +88,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
 </body>
 </html>
+
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        const senha = document.getElementById('senha').value;
+        const confirmarSenha = document.getElementById('confirmarsenha').value;
+
+        if (senha !== confirmarSenha) {
+            alert("As senhas precisam ser iguais!");
+            event.preventDefault(); // Impede o envio do formulário
+        }
+    });
+</script>

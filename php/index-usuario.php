@@ -1,7 +1,7 @@
 <?php
 // Inclui o arquivo de conexão com o banco de dados
 require_once 'db.php';
-require_once 'authenticate.php';
+require_once './authenticate.php';
 // Executa a consulta para obter todos os alunos
 $stmt = $pdo->query("SELECT * FROM usuarios");
 // Recupera todos os resultados da consulta como um array associativo
@@ -33,12 +33,6 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <li><a href="#">Chat</a></li>
                     <li><a href="#">Perfil</a></li> 
                     <li><a href="/php/logout.php">Logout (<?= $_SESSION['user'] ?>)</a></li>
-                <?php else: ?>
-                    <li><a href="/php/sobrenos.php">Sobre Nós</a></li>
-                    <li><a href="/php/entrar.php">Entrar </a></li> 
-                    <li><a href="/php/cadastro.php">Cadastre-se</a></li>
-                    <li><a href="#"> oi</a></li>
-                    <li><a href="#"> oi</a></li>
                 <?php endif; ?>
             </ul>
         </nav>

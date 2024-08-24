@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['username_id'])) {
-    header('Location: entrar.php');
+    header('Location: ./php/entrar.php');
     exit();
 }
 ?>
