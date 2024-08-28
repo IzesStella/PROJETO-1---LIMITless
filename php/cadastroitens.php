@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadatro Produto</title>
-    <link rel="stylesheet" href="cadastroitens.css"></link>
+    <title>Cadastrar Produto</title>
+    <link rel="stylesheet" href="../css/cadastroitens.css"></link>
 
 </head>
 <body>
@@ -18,16 +18,16 @@
         </form>
         <nav>
             <ul>
-                <a href="#"><img src="chat.png" alt="Chat Icon" class="nav-icon"></a>
-                <a href="#"><img src="favoritos.jpg" alt="fav Icon" class="nav-icon"></a> 
-                <a href="/php/logout.php"><img src="perfil.png" alt="Perfil Icon" class="nav-icon"></a>
+                <a href="#"><img src="../php/img/chat.jpg" alt="Chat Icon" class="nav-icon chat-icon"></a>
+                <a href="#"><img src="../php/img/favoritos.png" alt="fav Icon" class="nav-icon fav-icon"></a> 
+                <a href="/php/logout.php"><img src="../php/img/perfil.png" alt="Perfil Icon" class="nav-icon"></a>
             </ul>
         </nav>
     </header>
     
     <div class="upload-contaider">
         <label for="upload">
-            <img src="upload.png" alt="Upload Image" class="upload-image"></label>
+            <img src="../php/img/upload.png" alt="Upload Image" class="upload-image"></label>
         <input type="file" id="upload" name="arquivo" required>
     </div>
 

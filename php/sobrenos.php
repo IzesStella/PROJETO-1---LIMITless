@@ -36,19 +36,19 @@
 
     <div class="desenvolvedores">
         <div class="card">
-            <img src="dyvamia.jpg" alt="IzesStella">
+            <img src="../php/img/dyvamia.jpg" alt="IzesStella">
             <div class="card-content">
                 <h2>Izes Linda</h2>
                 <div class="link">
                     <a href="https://www.instagram.com/izesstella/">
-                        <img src="instalogo.png" alt="logoinsta" class="insta-logo">
+                        <img src="../php/img/instalogo.png" alt="logoinsta" class="insta-logo">
                     </a>
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <img src="dyvamia.jpg" alt="Mari">
+            <img src="../php/img/dyvamia.jpg" alt="Mari">
             <div class="card-content">
                 <h2>Mariana Tavares</h2>
                 <div class="link">
@@ -60,7 +60,7 @@
         </div>
 
         <div class="card">
-            <img src="dyvamia.jpg" alt="Lucas">
+            <img src="../php/img/dyvamia.jpg" alt="Lucas">
             <div class="card-content">
                 <h2>Lucas Amaro</h2>
                 <div class="link">
@@ -72,7 +72,7 @@
         </div>
 
         <div class="card">
-            <img src="dyvamia.jpg" alt="Isabelly">
+            <img src="../php/img/dyvamia.jpg" alt="Isabelly">
             <div class="card-content">
                 <h2>Isabelly Arruda</h2>
                 <div class="link">
@@ -84,7 +84,7 @@
         </div>
 
         <div class="card">
-            <img src="dyvamia.jpg" alt="Talita">
+            <img src="../php/img/dyvamia.jpg" alt="Talita">
             <div class="card-content">
                 <h2>Talita Vitória</h2>
                 <div class="link">
@@ -98,7 +98,7 @@
 
     <div class="button-container">
     <a href="https://github.com/IzesStella/PROJETO-1---LIMITless" class="btn1">
-        <img src="githubicon.png" alt="Voltar" class="button-image">
+        <img src="../php/img/githubicon.png" alt="Voltar" class="button-image">
     </a>
 </div>
 
