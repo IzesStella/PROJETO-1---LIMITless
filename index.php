@@ -19,7 +19,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <header>
         <div class="logo">
-            <img src="../php/img/logo barra.png">
+            <img src="img/logo barra.png">
         </div>
 
         <form class="search-form"> 
@@ -52,5 +52,6 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </li>
         </nav>
     </header>
+    <div class="Banner-item"><img src="../img/banner.png" alt="Banner"></div>
 </body>
 </html>

@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../php/img/logo barra.png">
+            <img src="/img/logo barra.png">
         </div>
 
         <form class="search-form"> 
@@ -18,16 +18,16 @@
         </form>
         <nav>
             <ul>
-                <a href="#"><img src="../php/img/chat.jpg" alt="Chat Icon" class="nav-icon chat-icon"></a>
-                <a href="#"><img src="../php/img/favoritos.png" alt="fav Icon" class="nav-icon fav-icon"></a> 
-                <a href="/php/logout.php"><img src="../php/img/perfil.png" alt="Perfil Icon" class="nav-icon"></a>
+                <a href="#"><img src="/img/chat.jpg" alt="Chat Icon" class="nav-icon chat-icon"></a>
+                <a href="#"><img src="/img/favoritos.png" alt="fav Icon" class="nav-icon fav-icon"></a> 
+                <a href="/php/logout.php"><img src="/img/perfil.png" alt="Perfil Icon" class="nav-icon"></a>
             </ul>
         </nav>
     </header>
     
     <div class="upload-contaider">
         <label for="upload">
-            <img src="../php/img/upload.png" alt="Upload Image" class="upload-image"></label>
+            <img src="/img/upload.png" alt="Upload Image" class="upload-image"></label>
         <input type="file" id="upload" name="arquivo" required>
     </div>
 

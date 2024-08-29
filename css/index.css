@@ -92,3 +92,16 @@ a:hover {
     color: #4E9E48; 
     margin: 0 auto;
 }
+
+.Banner-item{
+    position: absolute;
+    top: 170px;
+    left: 160px;
+
+}
+
+.Banner-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+ }
