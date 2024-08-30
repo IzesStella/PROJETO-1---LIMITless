@@ -76,9 +76,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <input type="text" id="estado_prod" name="estado_prod" required>
 
             
-       <button type="submit">Postar Item</button> 
-    </div>
-</div>
+             
+            </div>
+            <button type="submit">Postar Item</button>
 
 </body>
        </html>

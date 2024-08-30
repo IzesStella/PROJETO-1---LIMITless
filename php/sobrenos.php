@@ -8,10 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo barra.png">
-        </div>
-        <div class="logo">
+                <div class="logo">
             <img src="/img/logo barra.png">
         </div>
 

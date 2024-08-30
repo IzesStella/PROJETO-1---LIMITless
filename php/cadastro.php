@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input type="tel" id="telefone" name="telefone" required>
                 </div>
 
-                <div class="formgrupo">
+                <div>
                     <label for="bairro">Bairro:</label>
                     <select id="bairro" name="bairro" required>
                         <option value="Agamenon Magalhães">Bairro</option>

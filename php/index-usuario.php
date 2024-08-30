@@ -31,7 +31,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <ul>
                 <?php if (isset($_SESSION['user_id'])): ?>
                     </li><a href="cadastro-itens.php"><img src="../img/chat.jpg" alt="Chat Icon" class="nav-icon"></a></li>
-                    </li><a href="#"><img src="../img/favoritos.png" alt="fav Icon" class="nav-icon"></a></li> 
+                    </li><a href="/php/perfil.php"><img src="../img/favoritos.png" alt="fav Icon" class="nav-icon"></a></li> 
                     </li><a href="/php/logout.php"><img src="../img/perfil.png" alt="Perfil Icon" class="nav-icon"></a></li>
                     <?php else: ?>
                     </li><a href="/php/sobrenos.php">Sobre Nós</a></li>

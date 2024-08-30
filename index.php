@@ -30,7 +30,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <ul>
                 <?php if (isset($_SESSION['username_id'])): ?>
                     <li><a href="#">Chat</a></li>
-                    <li><a href="#">Perfil</a></li> 
+                    <li><a href="/php/perfil.php">Perfil</a></li> 
                     <li><a href="/php/logout.php">Logout (<?= $_SESSION['user'] ?>)</a></li>
                 <?php else: ?>
                     </li><a href="/php/sobrenos.php">Sobre Nós</a></li>
