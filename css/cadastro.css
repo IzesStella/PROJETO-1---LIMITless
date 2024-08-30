@@ -80,7 +80,7 @@ h2 {
    gap: 10px; /*espaço entre os campos no meio*/
 }
 
-.formgrupo input {
+.formgrupo input{
    width: calc(100% - 20px); /*faz os botoes do forms ficar um do lado do outro junto com os nomes */
    padding: 10px;
    border-radius: 10px;

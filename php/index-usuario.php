@@ -20,7 +20,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo barra.png">
+            <img src="../img/logo barra.png">
         </div>
 
         <form class="search-form"> 
@@ -30,9 +30,9 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <nav>
             <ul>
                 <?php if (isset($_SESSION['user_id'])): ?>
-                    </li><a href="#">Chat</a></li>
-                    </li><a href="#">Perfil</a></li> 
-                    </li><a href="/php/logout.php">Logout</a></li>
+                    </li><a href="cadastro-itens.php"><img src="../img/chat.jpg" alt="Chat Icon" class="nav-icon"></a></li>
+                    </li><a href="#"><img src="../img/favoritos.png" alt="fav Icon" class="nav-icon"></a></li> 
+                    </li><a href="/php/logout.php"><img src="../img/perfil.png" alt="Perfil Icon" class="nav-icon"></a></li>
                     <?php else: ?>
                     </li><a href="/php/sobrenos.php">Sobre Nós</a></li>
                     </li><a href="/php/entrar.php">Entrar </a></li> 

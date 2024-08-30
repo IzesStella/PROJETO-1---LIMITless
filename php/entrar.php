@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="container">
                 <div class="formentrar">
                     <div class="image-container">
-                        <img src="img/logo grande.png" alt="logo">
+                        <img src="../img/logo grande.png" alt="logo">
                     </div><br>
                     <form method="post">
                         <label for="user">Username:</label>
