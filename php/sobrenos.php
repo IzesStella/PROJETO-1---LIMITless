@@ -49,8 +49,8 @@
             <div class="card-content">
                 <h2>Mariana Tavares</h2>
                 <div class="link">
-                    <a href="https://github.com/marianantavares">
-                    
+                    <a href="https://www.instagram.com/mari.n.t/">
+                    <img src="/img/instalogo.png" alt="logoinsta" class="insta-logo">
                     </a>
                 </div>
             </div>
@@ -61,8 +61,8 @@
             <div class="card-content">
                 <h2>Lucas Amaro</h2>
                 <div class="link">
-                    <a href="https://github.com/lucazle">
-                    
+                    <a href="https://www.instagram.com/lucazle/">
+                    <img src="/img/instalogo.png" alt="logoinsta" class="insta-logo">
                     </a>
                 </div>
             </div>
@@ -73,8 +73,8 @@
             <div class="card-content">
                 <h2>Isabelly Arruda</h2>
                 <div class="link">
-                    <a href="https://github.com/IsabellyArrudaa">
-                        
+                    <a href="https://www.instagram.com/isabellyarruda/">
+                    <img src="/img/instalogo.png" alt="logoinsta" class="insta-logo">
                     </a>
                 </div>
             </div>
@@ -85,8 +85,8 @@
             <div class="card-content">
                 <h2>Talita Vitória</h2>
                 <div class="link">
-                    <a href="https://github.com/Talitavit">
-    
+                    <a href="https://www.instagram.com/talitaavit/t">
+                    <img src="/img/instalogo.png" alt="logoinsta" class="insta-logo">
                     </a>
                 </div>
             </div>
@@ -94,9 +94,11 @@
     </div>
 
     <div class="button-container">
+    <h2 class="text-left">Git</h2>
     <a href="https://github.com/IzesStella/PROJETO-1---LIMITless" class="btn1">
         <img src="/img/githubicon.png" alt="Voltar" class="button-image">
     </a>
+    <h2 class="text-right">Hub</h2>
 </div>
 
 </body>

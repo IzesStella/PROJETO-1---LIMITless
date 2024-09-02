@@ -95,14 +95,58 @@ a:hover {
 
 .Banner-item{
     position: absolute;
-    top: 170px;
-    left: 160px;
-
+    top: 40%;
+    left: 50%;
+    width: 110%;
+    height: auto;
+    transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
+    align-items: center;
+    position: absolute;
 }
 
 .Banner-item img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    align-items: center;
+    display: block;
+    margin: 0 auto;
  }
+
+ @media (max-width: 768px) {
+    .logo {
+        left: 20px; /* Ajusta a posição do logo em telas menores */
+    }
+
+    .logo img {
+        width: 80px; /* Reduz o tamanho do logo em telas menores */
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center; /* Alinha itens do menu verticalmente em telas menores */
+        padding: 0; /* Remove padding para menus verticais */
+        position: static; /* Remove a posição absoluta */
+        top: auto;
+        right: auto;
+    }
+
+    li {
+        padding: 10px; /* Ajusta o padding dos itens do menu */
+        width: auto; /* Ajusta a largura dos itens do menu */
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: center; /* Alinha o formulário de busca verticalmente */
+    }
+
+    .search-form input {
+        width: 100%; /* Ajusta a largura do input para caber em telas menores */
+        max-width: 400px; /* Define uma largura máxima para o input */
+    }
+
+    .Banner-item {
+        width: 100%; /* Ajusta a largura do Banner-item */
+        top: 30%; /* Ajusta a posição vertical do Banner-item */
+    }
+}

@@ -1,6 +1,8 @@
 
 body {
     background-color: #FAF6F4;
+    justify-content: center; 
+    align-items: center; 
 }
 
 header {
@@ -13,15 +15,63 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+
 }
 
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 3%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+li {
+    margin: 0 10px;
+    padding: 0;
+}
+
+
+li a {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 15px;
+    font-weight: 400; 
+    color: #4F744C;
+    text-decoration: none; 
+    padding: 10px; 
+}
+
+/* Estilo para o hover do link */
+li a:hover {
+    text-decoration: underline; 
+}
+
+
+a {
+    color: #4F744C; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px; 
+    text-decoration: none; 
+    padding: 10px; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+
 .insta-logo {
-    width: 30px; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 30px; 
+    height: auto; 
 }
 
 .link img.insta-logo {
-    max-width: 100%; /* Garante que a imagem não exceda o tamanho do contêiner */
+    max-width: 100%; 
     max-height: 30px; 
     width: auto; 
     height: auto; 
@@ -90,15 +140,17 @@ a:hover {
     display: flex;
     flex-direction: column;
     position: relative;
-    transition: transform 0.3s ease; /* Adiciona transição suave */
+    transition: transform 0.3s ease;
+ 
+    filter: grayscale(100%);
 }
 
 .card img {
     width: 100%;
-    height: 50%; /* Mantém a altura anterior */
+    height: 50%;
     object-fit: cover;
     cursor: auto;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, filter 0.3s ease; /* Adicionando transição para o filtro */
 }
 
 .card:hover {
@@ -107,16 +159,22 @@ a:hover {
 
 /* Efeito de sobreposição verde com degradê branco transparente */
 .card::before {
-    content: "";
+    content: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 255, 0, 0.5), rgba(255, 255, 255, 0));
+    background: linear-gradient(to bottom, rgba(146, 252, 146, 0.5), rgba(255, 255, 255, 0));
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 1; /* Garante que a sobreposição esteja acima da imagem */
+}
+
+
+.card:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%); /* Remove o filtro de escala de cinza ao passar o mouse */
 }
 
 .card:hover::before {
@@ -128,17 +186,18 @@ a:hover {
     text-align: center;
     background-color: white;
     flex: 1;
-    font-family: Poppins;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: relative;
     z-index: 2; /* Garante que o conteúdo do card esteja acima da sobreposição */
 }
 
 .card h2 {
-    color: #333;
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .card p {
-    color: #666;
+    color: #000000;
 }
 
 .link {
@@ -150,11 +209,11 @@ a:hover {
 
 .button-container {
     display: flex;
-    justify-content: center;
+    Justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    padding-bottom: 20px; /* Espaço extra na parte inferior */
-}
+    margin: 50px auto;
+ }
+
 
 .btn1 {
     border-radius: 20px;
@@ -179,4 +238,16 @@ a:hover {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease;
+    width: 100px;
+
+ }
+ .text-left, .text-right {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800; /* Roboto Extrabold */
+    color: #000000;
+    margin: 0 10px; /* Espaçamento entre o texto e o botão */
+    font-weight: 800; 
+    font-size: 45px; 
+    margin: 0 15px; /* Ajuste o espaçamento entre o texto e o botão */
 }
+
