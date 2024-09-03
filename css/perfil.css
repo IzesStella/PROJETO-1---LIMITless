@@ -110,18 +110,18 @@ text-decoration: underline;
 
 
 .search-form {
+    flex: 1;
     display: flex;
-    align-items: center;
-    margin: 0 auto;
-    padding: 2%;
+    justify-content: center;
 }
 
 .search-form input {
-    padding: 8px;
+    padding: 10px;
     font-size: 15px;
     border-radius: 10px;
     outline: none;
-    width: 650px; 
+    width: 70%;
+    max-width: 650px; 
     background-color: #CAF5C6A8; 
     border: 1px solid #CAF5C6A8; 
     color: #4E9E48; 
