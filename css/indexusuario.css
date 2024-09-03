@@ -1,5 +1,6 @@
 body{
         background-color:#FAF6F4; 
+        overflow: hidden;
 }
 
 header{
@@ -27,18 +28,6 @@ header{
     height: auto;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px; /* Limita a largura máxima do conteúdo */
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 120px; /* Espaço para o header fixo */
-}
-
 ul {
     display: flex;
     justify-content: flex-end;
@@ -62,7 +51,7 @@ li{
     width: 100%;
     box-sizing: border-box;
       
-    }
+ }
 
 
 li a { 
@@ -90,18 +79,6 @@ a:hover {
     text-decoration: underline; 
 }
 
-.category-links {
-    display: flex;
-    justify-content: space-around;
-    position: static; /* Mantém o posicionamento padrão */
-    padding: 0 10px; /* Adiciona espaçamento entre os links */
-    width: auto; /* Ajusta a largura para o conteúdo */
-}
-
-.category-links a {
-    margin: 0 10px; /* Espaçamento entre os links */
-}
-
 .search-form {
     display: flex;
     align-items: center;
@@ -123,7 +100,7 @@ a:hover {
 
 .Banner-item{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     width: 110%;
     height: auto;

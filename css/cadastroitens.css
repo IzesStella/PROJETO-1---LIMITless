@@ -1,5 +1,6 @@
 body{
     background-color:#FAF6F4; 
+    overflow: hidden;
 }
 
 header{
@@ -13,6 +14,7 @@ top: 0;
 left: 0;
 z-index: 1000;
 }
+
 
 .logo {
 position: absolute;

@@ -26,31 +26,22 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <input type="text" placeholder="Procurar itens...">
         </form>
 
-        <nav>
-        <ul>
-                <?php if (isset($_SESSION['username_id'])): ?>
-                    <li><a href="#">Chat</a></li>
-                    <li><a href="/php/perfil.php">Perfil</a></li> 
-                    <li><a href="/php/logout.php">Logout (<?= $_SESSION['user'] ?>)</a></li>
-                <?php else: ?>
-                    </li><a href="/php/sobrenos.php">Sobre Nós</a></li>
-                    </li><a href="/php/entrar.php">Entrar </a></li> 
-                    </li><a href="/php/cadastro.php">Cadastre-se</a></li>
-                <?php endif; ?>
-            </ul>
-        </nav>
-       <nav>
-            <li>
-                 <a href="#"> FEMININO </a>
-                 <a href="#"> MASCULINO </a>
-                 <a href="#"> FEMININO PLUS SIZE </a>
-                 <a href="#"> MASCULINO PLUS SIZE </a>
-                 <a href="#"> FANTASIA </a>
-                 <a href="#"> BOLSA</a>
-                 <a href="#"> CALÇADOS </a>
-                 <a href="#"> ACESSÓRIOS </a>
-            </li>
-        </nav>
+            <nav>
+                <ul>
+                    <?php if (isset($_SESSION['username_id'])): ?>
+                        <li><a href="#">Chat</a></li>
+                        <li><a href="/php/perfil.php">Perfil</a></li> 
+                        <li><a href="/php/logout.php">Logout (<?= $_SESSION['user'] ?>)</a></li>
+                    <?php else: ?>
+                        <li><a href="/php/sobrenos.php">Sobre Nós</a></li>
+                        <li><a href="/php/entrar.php">Entrar </a></li> 
+                        <li><a href="/php/cadastro.php">Cadastre-se</a></li>
+                    <?php endif; ?>
+                </ul>
+            </nav>
+        </div>
+
+    
     </header>
     <div class="Banner-item"><img src="../img/banner.png" alt="Banner"></div>
 </body>

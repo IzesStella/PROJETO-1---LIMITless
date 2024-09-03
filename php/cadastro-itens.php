@@ -1,4 +1,4 @@
-<?php
+<a?php
 session_start();
 require_once 'db.php';
 require_once 'authenticate.php';
@@ -36,9 +36,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 </head>
 <body>
-    <header>
+<header>
         <div class="logo">
-            <img src="../img/logo barra.png">
+            <img src="../img/logo barra.png" alt="Logo">
         </div>
 
         <form class="search-form"> 
@@ -47,8 +47,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <nav>
             <ul>
-            <li><a href="/php/perfil.php"><img src="../img/addproduto.png" alt="Produto Icon"></a></li> 
-            <li><a href="/php/logout.php"><img src="../img/perfillogo.png" alt="Perfil Icon"></a></li>
+            <li><a href="/php/sobrenos.php"><img src="../img/about.png" alt="Sobre Icon"></a></li> 
+            <li><a href="/php/cadastro-itens.php"><img src="../img/addproduto.png" alt="Produto Icon"></a></li> 
+            <li><a href="/php/perfil.php"><img src="../img/perfillogo.png" alt="Perfil Icon"></a></li>
             </ul>
         </nav>
     </header>

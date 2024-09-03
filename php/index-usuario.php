@@ -27,11 +27,14 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <input type="text" placeholder="Procurar itens...">
         </form>
 
+    
         <nav>
             <ul>
                 <?php if (isset($_SESSION['user_id'])): ?>
+                    <li><a href="/php/sobrenos.php"><img src="../img/about.png" alt="Sobre Icon"></a></li> 
                     <li><a href="/php/cadastro-itens.php"><img src="../img/addproduto.png" alt="Produto Icon"></a></li> 
                     <li><a href="/php/perfil.php"><img src="../img/perfillogo.png" alt="Perfil Icon"></a></li>
+                  
                     <?php else: ?>
                     <li><a href="/php/sobrenos.php">Sobre Nós</a></li>
                     <li><a href="/php/entrar.php">Entrar </a></li> 
@@ -39,19 +42,6 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <?php endif; ?>
             </ul>
         </nav>
-
-            <nav>
-                 <li class="category-links">
-                    <a href="#"> FEMININO </a>
-                    <a href="#"> MASCULINO </a>
-                    <a href="#"> FEMININO PLUS SIZE </a>
-                    <a href="#"> MASCULINO PLUS SIZE </a>
-                    <a href="#"> FANTASIA </a>
-                    <a href="#"> BOLSA</a>
-                    <a href="#"> CALÇADOS </a>
-                    <a href="#"> ACESSÓRIOS </a>
-                    </li>
-            </nav>
     </header>
 
     <div class="Banner-item"><img src="../img/banner.png" alt="Banner"></div>
