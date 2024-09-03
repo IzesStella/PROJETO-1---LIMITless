@@ -18,10 +18,10 @@
 
         <nav>
             <ul>
-<<<<<<< HEAD
-=======
+
+
             <li><a href="/php/sobrenos.php"><img src="../img/about.png" alt="Sobre Icon"></a></li> 
->>>>>>> 6c6f96947b3dc42e8f2c302c3e81e245917fbf68
+
                 <li><a href="/php/cadastro-itens.php"><img src="../img/addproduto.png" alt="Add Icon" class="nav-icon"></a></li>
                 <li><a href="/php/perfil.php"><img src="../img/perfillogo.png" alt="Perfil Icon" class="nav-icon"></a></li> 
             </ul>
@@ -43,14 +43,11 @@
                 <a href="/php/cadastro-itens.php" class="register-product">
                     <img src="../img/addproduto.png" alt="Add Icon">
                     <p>Cadastrar Produtos</p>
-<<<<<<< HEAD
-                </a>
-                <a href="/php/logout.php"><img src="../img/perfillogo.png" alt="Perfil Icon">
-=======
 
->>>>>>> 6c6f96947b3dc42e8f2c302c3e81e245917fbf68
-                    <button class="logout-button">Log Out</button>
                 </a>
+                
+                    <button class="logout-button"><a href="/php/logout.php">Log Out</button>
+        
             </div>
         </div>
 
