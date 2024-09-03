@@ -1,23 +1,3 @@
-<?php
-
-require_once 'db.php';
-
-$stmt = $pdo->prepare("
-SELECT p.NOME, p.TAMANHO, p.COR, p.ESTADO_PROD, p.IMAGEM, u.NOME AS USUARIO
-FROM PRODUTOS p
-JOIN USUARIOS u ON p.USUARIO_ID = u.ID
-WHERE p.ID = :id
-");
-$stmt->execute(['id' => 1]); // ID do produto a ser exibido
-$produto = $stmt->fetch(PDO::FETCH_ASSOC);
-
-if ($produto) {
-// Convertendo o BLOB da imagem para base64
-$imagemBase64 = base64_encode($produto['IMAGEM']);
-$imagem = "data:image/jpeg;base64," . $imagemBase64;
-
-?>
-
 <!DOCTYPE html>
         <html lang="pt-BR">
         <head>
@@ -29,7 +9,7 @@ $imagem = "data:image/jpeg;base64," . $imagemBase64;
         <body>
             <header>
                 <div class="logo">
-                    <img src="img/logo barra.png">
+                    <img src="../img/logo barra.png">
                 </div>
         
                 <form class="search-form"> 
@@ -50,14 +30,19 @@ $imagem = "data:image/jpeg;base64," . $imagemBase64;
                     </ul>
                 </nav>
 
+                <img src="" alt="" class="product-image">
             <div class="product">
-                <img src="<?php echo htmlspecialchars($produto['imagem']); ?>" alt="" class="product-image">
                 <div class="product-details">
-                    <h1 class="product-name"><?php echo htmlspecialchars($produto['nome']); ?></h1>
-                    <p class="product-detail">Tamanho da Forma: <?php echo htmlspecialchars($produto['tamanho']); ?></p>
-                    <p class="product-detail">Cor: <?php echo htmlspecialchars($produto['cor']); ?></p>
-                    <p class="product-detail">Estado do item: <?php echo htmlspecialchars($produto['estado_prod']); ?></p>
+                    <h1 class="product-name">   .</h1>
+                    <p class="product-detail">Tamanho da Forma:</p>
+                    <p class="product-detail">Cor:</p>
+                    <p class="product-detail">Estado do item:</p>
                 </div>
+            </div>
+            <div class="user-info">
+                 <p class="user-item">Item de</p>
+                 <p class="user-name"></p>
+                 <p class="user-handle"></p>
             </div>
             <a href="#" class="btn1">
                 <img src="../img/chat.jpg" alt="Voltar" class="button-image">
@@ -65,6 +50,3 @@ $imagem = "data:image/jpeg;base64," . $imagemBase64;
             <h3 class="text-chat"> Iniciar Chat</h3>
         </body>
     </html>
-    <?php
-}
-?>

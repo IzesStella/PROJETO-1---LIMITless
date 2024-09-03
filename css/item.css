@@ -147,56 +147,71 @@ a:hover {
     margin-right: 20px;
     border: 0.15px #000;
     position: absolute;
-    top: -50px;
-    left: -370px;
+    top: 180px;
+    left: 450px;
 }
 
-.product-details {
-    flex: 1;
-}
 
 .product{
     position: absolute;
     top: 225px;
-    left: 723px;
-
+    left: 840px;
 }
 
 .product-name {
-    color: #000;
-    font-family: Roboto;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 40px;
     font-style: normal;
     line-height: normal;
+    margin: 0%;
 }
     
 .product-detail {
-    color: #000;
-    font-family: Roboto;
-    font-size: 22px;
-    color: #000;
+    font-size: 15px;
     font-style: normal;
     font-weight: 550;
     line-height: normal;
+    margin: 0;
+}
+
+.user-info {
+    position: relative;
+    top: 370px;
+    left: 840px;
+}
+
+.user-item{
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+}
+
+.user-handle {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    font-style: italic;
 }
 
 .btn1{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     position: absolute;
-    top: 555px;
-    left: 700px;
+    top: 545px;
+    left: 820px;
 }
 
 .text-chat{
     position: absolute;
     top: 560px;
-    left: 765px;
-    color: #000;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
+    left: 885px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: normal;
 }
