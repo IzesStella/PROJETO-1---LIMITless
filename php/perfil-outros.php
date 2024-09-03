@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Perfil</title>
-    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="stylesheet" href="../css/perfil-outros.css">
 </head>
 <body>
     <header>
@@ -28,26 +28,16 @@
         <div class="profile-header">
             <div class="profile-picture">
                 <img src="../img/perfillogo.png" alt="Foto de Perfil">
-                <button class="edit-profile-button">Editar Perfil</button>
             </div>
             <div class="profile-info">
                 <h1>Nome Completo</h1>
                 <p>username</p>
             </div>
-            <div class="actions">
-                
-                <a href="/php/cadastro-itens.php" class="register-product">
-                    <img src="../img/addproduto.png" alt="Add Icon">
-                    <p>Cadastrar Produtos</p>
-                </a>
-                <a href="/php/logout.php"><img src="../img/perfillogo.png" alt="Perfil Icon">
-                    <button class="logout-button">Log Out</button>
-                </a>
-            </div>
+          
         </div>
 
         <div class="products-section">
-            <h2>Seus Produtos</h2>
+            <h2>Produtos</h2>
             <div class="products-list">
                 <div class="product-item">
                     <img src="../img/placeholder.png" alt="Produto">
