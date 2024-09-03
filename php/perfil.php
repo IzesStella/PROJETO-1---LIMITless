@@ -41,7 +41,7 @@
                     <img src="../img/addproduto.png" alt="Add Icon">
                     <p>Cadastrar Produtos</p>
 
-                    <button class="logout-button">Log Out</button>
+                    <button class="logout-button"><a href="/php/logout.php">Log Out</button>
                 </a>
             </div>
         </div>
