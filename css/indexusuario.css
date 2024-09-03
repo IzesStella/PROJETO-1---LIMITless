@@ -1,0 +1,180 @@
+body{
+        background-color:#FAF6F4; 
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+
+.logo {
+    position: absolute;
+    top: 0%;
+    padding: 5px;
+    left: 100px;
+}
+
+.logo img {
+    width: 100px; 
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px; /* Limita a largura máxima do conteúdo */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 120px; /* Espaço para o header fixo */
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Adicionado para alinhar os ícones verticalmente */
+    list-style-type: none;
+    margin: 0;
+    padding: 0; /* Padding removido */
+    position: absolute;
+    top: 16%;
+    right: 150px;
+    gap: 20px; /* Adicionado para criar espaço entre os ícones */
+}
+
+li{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top:65%;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+      
+    }
+
+
+li a { 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+    line-height: normal;
+}
+    
+
+a{
+    color: #4F744C;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+.category-links {
+    display: flex;
+    justify-content: space-around;
+    position: static; /* Mantém o posicionamento padrão */
+    padding: 0 10px; /* Adiciona espaçamento entre os links */
+    width: auto; /* Ajusta a largura para o conteúdo */
+}
+
+.category-links a {
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.search-form input {
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    width: 650px; 
+    background-color: #CAF5C6A8; 
+    border: 1px solid #CAF5C6A8; 
+    color: #4E9E48; 
+    margin: 0 auto;
+}
+
+.Banner-item{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 110%;
+    height: auto;
+    transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
+    align-items: center;
+    position: absolute;
+}
+
+.Banner-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+ }
+
+ @media (max-width: 768px) {
+    .logo {
+        left: 20px; /* Ajusta a posição do logo em telas menores */
+    }
+
+    .logo img {
+        width: 80px; /* Reduz o tamanho do logo em telas menores */
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center; /* Alinha itens do menu verticalmente em telas menores */
+        padding: 0; /* Remove padding para menus verticais */
+        position: static; /* Remove a posição absoluta */
+        top: auto;
+        right: auto;
+    }
+
+    li {
+        padding: 10px; /* Ajusta o padding dos itens do menu */
+        width: auto; /* Ajusta a largura dos itens do menu */
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: center; /* Alinha o formulário de busca verticalmente */
+    }
+
+    .search-form input {
+        width: 100%; /* Ajusta a largura do input para caber em telas menores */
+        max-width: 400px; /* Define uma largura máxima para o input */
+    }
+
+    .Banner-item {
+        width: 100%; /* Ajusta a largura do Banner-item */
+        top: 30%; /* Ajusta a posição vertical do Banner-item */
+    }
+}

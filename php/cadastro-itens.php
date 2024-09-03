@@ -44,16 +44,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <form class="search-form"> 
             <input type="text" placeholder="Procurar itens...">
         </form>
+
         <nav>
             <ul>
-                <a href="#"><img src="../img/chat.jpg" alt="Chat Icon" class="nav-icon"></a>
-                <a href="#"><img src="../img/favoritos.png" alt="fav Icon" class="nav-icon"></a> 
-                <a href="/php/logout.php"><img src="../img/perfil.png" alt="Perfil Icon" class="nav-icon"></a>
+            <li><a href="/php/perfil.php"><img src="../img/addproduto.png" alt="Produto Icon"></a></li> 
+            <li><a href="/php/logout.php"><img src="../img/perfillogo.png" alt="Perfil Icon"></a></li>
             </ul>
         </nav>
     </header>
     
     <div>
+
+
     <div class="upload-contaider">
         <label for="upload">
             <img src="../img/upload.png" alt="Upload Image" class="upload-image"></label>
