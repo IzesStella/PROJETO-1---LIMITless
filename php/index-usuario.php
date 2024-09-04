@@ -138,7 +138,7 @@ try {
                     <img class="product-image" src="../storage/<?php echo htmlspecialchars($produto['path_produto']); ?>" alt="<?php echo htmlspecialchars($produto['nome']); ?>">
                     <div class="product-name"><?php echo htmlspecialchars($produto['nome']); ?></div>
                     <div class="product-actions">
-                        <a href="produto_detalhes.php?id=<?php echo $produto['id']; ?>">Ver Detalhes</a>
+                        <a href="item.php?id=<?php echo $produto['id']; ?>">Ver Detalhes</a>
                     </div>
                 </div>
             <?php endforeach; ?>
