@@ -8,28 +8,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $username = $_POST['user'];
     $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
+
     
     $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE user = ?");
     $stmt->execute([$username]);
     if ($stmt->rowCount() > 0) {
-        echo "Nome de usuário já existe!";
+        echo "<script>alert('Nome de usuário já existe!');</script>";
     } else {
+        
         $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
         $stmt->execute([$email]);
         if ($stmt->rowCount() > 0) {
-            echo "E-mail já cadastrado!";
+            echo "<script>alert('E-mail já cadastrado!');</script>";
         } else {
-        $stmt = $pdo->prepare("INSERT INTO USUARIOS (nome, telefone, bairro, email, user, senha) VALUES (?, ?, ?, ?, ?, ?)");
-        if ($stmt->execute([$nome, $telefone, $bairro, $email, $username, $senha])) {
-            echo "Usuário registrado com sucesso!";
-            header('Location: entrar.php');
-        } else {
-            echo "Erro ao registrar usuário.";
+            
+            $stmt = $pdo->prepare("INSERT INTO USUARIOS (nome, telefone, bairro, email, user, senha) VALUES (?, ?, ?, ?, ?, ?)");
+            if ($stmt->execute([$nome, $telefone, $bairro, $email, $username, $senha])) {
+                echo "<script>alert('Usuário registrado com sucesso!');</script>";
+                echo "<script>window.location.href = 'entrar.php';</script>";
+            } else {
+                echo "<script>alert('Erro ao registrar usuário.');</script>";
+            }
         }
     }
 }
-}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,6 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> LIMITless </title>
     <link rel="stylesheet" href="../css/cadastro.css">
+  
 </head>
 <body>
 
@@ -50,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h2>(Preencha os campos com seus dados)</h2>
 
         <form method="post">
-            
+        
             <div class="formgrupo">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -134,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     });
 
-    document.querySelector('form').addEventListener('submit', function(event) {
+    document.querySelector('form').addEventListener('submit'), function(event) {
         const email = document.getElementById('email').value;
         const confirmarSenha = document.getElementById('confirmarsenha').value;
     }

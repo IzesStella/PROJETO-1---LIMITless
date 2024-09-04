@@ -11,17 +11,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->execute([$username]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    
-        // Verifica se a senha está correta
-        if ($user && password_verify($senha, $user['SENHA'])) {
-            $_SESSION['user_id'] = $user['ID'];
-            $_SESSION['user'] = $user['USER'];
-            header('Location: /php/index-usuario.php');
-            exit;
-        } else {
-            echo "Nome de usuário ou senha incorretos!";
-        }
-    
+    // Verifica se a senha está correta
+    if ($user && password_verify($senha, $user['SENHA'])) {
+        $_SESSION['user_id'] = $user['ID'];
+        $_SESSION['user'] = $user['USER'];
+        header('Location: /php/index-usuario.php');
+        exit;
+    } else {
+        echo "<script>alert('Nome de usuário ou senha incorretos!'); window.location.href = '/php/entrar.php';</script>";
+        exit;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -31,6 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title> LIMITless </title>
             <link rel="stylesheet" href="../css/entrar.css">
+     
+        
+    </script>
         </head>
         <body>
         
@@ -49,7 +51,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
                         <button type="submit">Entrar</button> 
                     </form>
+                    
                 </div>        
             </div>  
+            
+           
         </body>
         </html>
