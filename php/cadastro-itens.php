@@ -59,7 +59,7 @@ if (isset($_POST['whatsapp'])) {
 <body>
 <header>
         <div class="logo">
-            <img src="../img/logo barra.png" alt="Logo">
+            <a href="../index.php"><img src="../img/logo barra.png" alt="logo"></a>
         </div>
 
         <form class="search-form"> 
@@ -94,10 +94,8 @@ if (isset($_POST['whatsapp'])) {
                 <label for="whatsapp">WhatsApp para Contato</label>
                 <input type="text" id="whatsapp" name="whatsapp" placeholder="Digite o número com DDD">
 
-                <label for="imagem">Imagem do Produto:</label>
+                <label for="imagem" class="file-upload"><img src="../img/upload.png" alt="Carregar imagem" class="upload-icon"></label>
                 <input type="file" id="imagem" name="imagem" accept="image/*" required>
-
-            
              
             </div>
             <button type="submit">Postar Item</button>

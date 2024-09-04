@@ -140,34 +140,32 @@ a:hover {
     border: 1px solid #ccc; 
     border-radius: 8px; 
     margin-bottom: 15px; 
-    box-shadow: rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.upload-contaider {
-    position: absolute;
+#imagem {
+    display: none;
+}
+
+.file-upload {
+    position: fixed;
     top: 180px;
     left: 600px;
     width: 320px;
-    height: 370px;
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
+    height: 390px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     background-color: #fff;
-    cursor: pointer; 
-    box-shadow: #000;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.upload-image {
-    position: absolute;
-    top: 140px;
-    left: 115px;
-    width: 100px; 
-    height: auto; 
-    margin-bottom: 10px;
-    cursor: pointer; 
-}
-
-.upload-contaider input[type="file"] {
-    display: none;
+.upload-icon {
+    max-width: 50%;
+    max-height: 50%;
 }
 
 button {

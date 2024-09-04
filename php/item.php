@@ -9,7 +9,7 @@
         <body>
             <header>
                 <div class="logo">
-                    <img src="../img/logo barra.png">
+                <a href="../index.php"><img src="../img/logo barra.png" alt="logo"></a>
                 </div>
         
                 <form class="search-form"> 
@@ -18,6 +18,7 @@
         
                 <nav>
                   <ul>
+                  <li><a href="/php/cadastro-itens.php"><img src="../img/addproduto.png" alt="Produto Icon"></a></li> 
                    <li><a href="/php/perfil.php"><img src="../img/perfillogo.png" alt="Perfil Icon"></a></li>
                   </ul>
                 </nav>
@@ -36,9 +37,5 @@
                  <p class="user-name"></p>
                  <p class="user-handle"></p>
             </div>
-            <a href="#" class="btn1">
-                <img src="../img/chat.jpg" alt="Voltar" class="button-image">
-            </a>            
-            <h3 class="text-chat"> Iniciar Chat</h3>
         </body>
     </html>
