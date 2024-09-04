@@ -101,6 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <option value="Triunfo">Triunfo</option>
                         <option value="Umbura">Umbura</option>
                         <option value="Vila Rural">Vila Rural</option>
+                    </select>
                 </div>
             </div>
 
@@ -139,8 +140,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     });
 
-    document.querySelector('form').addEventListener('submit'), function(event) {
+    document.querySelector('form').addEventListener('submit', function(event) {
         const email = document.getElementById('email').value;
         const confirmarSenha = document.getElementById('confirmarsenha').value;
-    }
+    });
 </script>
