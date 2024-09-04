@@ -1,9 +1,8 @@
-<a?php
-session_start();
+<?php
 require_once 'db.php';
 require_once 'authenticate.php';
 
-// Obter todos os usuários para associar ao aluno
+// Obter todos os usuários para associar ao produto
 $stmt = $pdo->query("SELECT id, user FROM usuarios");
 $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -12,13 +11,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $tamanho = $_POST['tamanho'];
     $cor = $_POST['cor'];
     $estado_prod = $_POST['estado_prod'];
+
+    // Verificar se foi enviada uma imagem
+    if (!empty($_FILES['imagem']['name'])) {
+        $extensao = pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+        $novoNome = uniqid() . '.' . $extensao;
+        $caminho = __DIR__ . '/../storage/' . $novoNome;
+
+        // Mover o arquivo para a pasta storage
+        if (move_uploaded_file($_FILES['imagem']['tmp_name'], $caminho)) {
+            // Inserir o caminho da imagem na tabela imagens
+            $imagem = $novoNome;
+        }
+        } else {
+        echo "Erro ao mover o arquivo.";
+        $imagem = null;
+    }
     
     // Se o usuário estiver logado, use o ID da sessão, caso contrário, use o valor enviado pelo formulário
     $usuario_id = $_SESSION['user_id'] ?? $_POST['usuario_id'];
 
     // Insere o novo produto no banco de dados
-    $stmt = $pdo->prepare("INSERT INTO produtos (nome, tamanho, cor, estado_prod, usuario_id) VALUES (?, ?, ?, ?, ?)");
-    $stmt->execute([$nome, $tamanho, $cor, $estado_prod, $usuario_id]);
+    $stmt = $pdo->prepare("INSERT INTO produtos (nome, tamanho, cor, estado_prod, path_produto, usuario_id) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->execute([$nome, $tamanho, $cor, $estado_prod, $imagem, $usuario_id]);
 
     header('Location: index-usuario.php');
     exit;
@@ -62,15 +77,7 @@ if (isset($_POST['whatsapp'])) {
     
     <div>
 
-
-    <div class="upload-contaider">
-        <label for="upload">
-            <img src="../img/upload.png" alt="Upload Image" class="upload-image"></label>
-        <input type="file" id="upload" name="arquivo" required>
-    </div>
-
-
-    <form action="" method="POST">
+    <form method="POST" enctype="multipart/form-data">
             <div class="form-grupo">
                 <label for="nome">Nome do Produto</label>
                 <input type="text" id="nome" name="nome" required>
@@ -86,6 +93,9 @@ if (isset($_POST['whatsapp'])) {
 
                 <label for="whatsapp">WhatsApp para Contato</label>
                 <input type="text" id="whatsapp" name="whatsapp" placeholder="Digite o número com DDD">
+
+                <label for="imagem">Imagem do Produto:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" required>
 
             
              
