@@ -71,7 +71,7 @@ $imagemPath = !empty($usuario['PATH_USUARIO']) ? '/storage/' . $usuario['PATH_US
             <div class="profile-info">
                 <!-- Exibe o nome completo e o username do usuário logado -->
                 <h1><?php echo htmlspecialchars($usuario['NOME'] ?? 'Nome não disponível'); ?></h1>
-                <p><a>Nome de Usuário: </a><?php echo htmlspecialchars($usuario['USER'] ?? 'Username não disponível'); ?></p>
+                <p class="user-handle"><a>@</a><?php echo htmlspecialchars($usuario['USER'] ?? 'Username não disponível'); ?></p>
             </div>
         </div>
         <div class="actions">

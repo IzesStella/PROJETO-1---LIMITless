@@ -232,3 +232,10 @@ margin: 0 auto;
     border-radius: 10px;
     background-color: #EAEAEA;
 }
+
+.user-handle {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    font-style: italic;
+}
