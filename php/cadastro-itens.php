@@ -23,6 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     header('Location: index-usuario.php');
     exit;
 }
+
+if (isset($_POST['whatsapp'])) {
+    $whatsappNumber = preg_replace('/\D/', '', $_POST['whatsapp']); // Remove tudo que não é número
+    $whatsappLink = "https://wa.me/55" . $whatsappNumber;
+    echo "<a href='$whatsappLink' target='_blank'>Falar com o vendedor no WhatsApp</a>";
+}
 ?>
 
 
@@ -77,6 +83,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <label for="estado_prod">Estado do Item</label>
                 <input type="text" id="estado_prod" name="estado_prod" required>
+
+                <label for="whatsapp">WhatsApp para Contato</label>
+                <input type="text" id="whatsapp" name="whatsapp" placeholder="Digite o número com DDD">
 
             
              
