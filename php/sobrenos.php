@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once './authenticate.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

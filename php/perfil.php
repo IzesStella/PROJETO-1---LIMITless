@@ -61,7 +61,8 @@ $imagemPath = !empty($usuario['PATH_USUARIO']) ? '/storage/' . $usuario['PATH_US
     </header>
 
     <div class="profile-container">
-        <div class="profile-header">
+    <div class="profile-header">
+        <div class="profile-details">
             <div class="profile-picture">
                 <!-- Exibe a imagem de perfil do usuário logado -->
                 <img src="<?php echo htmlspecialchars($imagemPath); ?>" alt="Foto de Perfil">
@@ -72,30 +73,28 @@ $imagemPath = !empty($usuario['PATH_USUARIO']) ? '/storage/' . $usuario['PATH_US
                 <h1><?php echo htmlspecialchars($usuario['NOME'] ?? 'Nome não disponível'); ?></h1>
                 <p><a>Nome de Usuário: </a><?php echo htmlspecialchars($usuario['USER'] ?? 'Username não disponível'); ?></p>
             </div>
-            <div class="actions">
-                <a href="/php/cadastro-itens.php" class="register-product">
-                    <img src="../img/addproduto.png" alt="Add Icon">
-                    <p>Cadastrar Produtos</p>
-                </a>
-                <button class="logout-button"><a href="/php/logout.php">Log Out</a></button>
-            </div>
+        </div>
+        <div class="actions">
+            <a href="/php/cadastro-itens.php" class="register-product">
+                <img src="../img/addproduto.png" alt="Add Icon">
+                <p>Cadastrar Produtos</p>
+            </a>
+            <button class="logout-button"><a href="/php/logout.php">Log Out</a></button>
         </div>
     </div>
+</div>
+
     <div class="products-section">
-            <h2>Seus Produtos</h2>
-            <div class="products-list">
-                <div class="product-item">
-                    <img src="../img/placeholder.png" alt="Produto">
-                    <p>Shorts Jeans</p>
-                </div>
-                <div class="product-item">
-                    <img src="../img/placeholder.png" alt="Produto">
-                    <p>Vestido Florido</p>
-                </div>
-                <div class="product-item">
-                    <img src="../img/placeholder.png" alt="Produto">
-                    <p>Calça de Couro</p>
-                </div>
+        <h2>Seus Produtos</h2>
+        <div class="products-list">
+            <div class="product-item">
+                <img src="../img/placeholder.png" alt="Produto">
+            </div>
+            <div class="product-item">
+                <img src="../img/placeholder.png" alt="Produto">
+            </div>
+            <div class="product-item">
+                <img src="../img/placeholder.png" alt="Produto">
             </div>
         </div>
     </div>
