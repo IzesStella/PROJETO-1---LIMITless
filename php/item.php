@@ -17,17 +17,9 @@
                 </form>
         
                 <nav>
-                <ul>
-                        <?php if (isset($_SESSION['username_id'])): ?>
-                            <li><a href="#">Chat</a></li>
-                            <li><a href="/php/perfil.php">Perfil</a></li> 
-                            <li><a href="/php/logout.php">Logout (<?= $_SESSION['user'] ?>)</a></li>
-                        <?php else: ?>
-                            </li><a href="/php/sobrenos.php">Sobre Nós</a></li>
-                            </li><a href="/php/entrar.php">Entrar </a></li> 
-                            </li><a href="/php/cadastro.php">Cadastre-se</a></li>
-                        <?php endif; ?>
-                    </ul>
+                  <ul>
+                   <li><a href="/php/perfil.php"><img src="../img/perfillogo.png" alt="Perfil Icon"></a></li>
+                  </ul>
                 </nav>
 
                 <img src="" alt="" class="product-image">

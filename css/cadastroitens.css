@@ -123,7 +123,7 @@ a:hover {
     flex-direction: column; 
     position: absolute; 
     top: 180px; 
-    left: 750px;
+    left: 950px;
 }
 
 .form-grupo label {
@@ -146,7 +146,7 @@ a:hover {
 .upload-contaider {
     position: absolute;
     top: 180px;
-    left: 400px;
+    left: 600px;
     width: 320px;
     height: 370px;
     border: 1px solid #ccc; 
@@ -177,7 +177,7 @@ button {
     border: none;
     position: absolute;
     top: 620px;
-    left: 650px;
+    left: 850px;
     width: 12%;
     font-size: 18px;
     padding: 15px;
