@@ -77,28 +77,30 @@ if (isset($_POST['whatsapp'])) {
     
     <div>
 
+    <div class="form-container">
     <form method="POST" enctype="multipart/form-data">
-            <div class="form-grupo">
-                <label for="nome">Nome do Produto</label>
-                <input type="text" id="nome" name="nome" required>
+        <div class="form-grupo">
+            <label for="nome">Nome do Produto</label>
+            <input type="text" id="nome" name="nome" required>
 
-                <label for="tamanho">Tamanho da Forma</label>
-                <input type="text" id="tamanho" name="tamanho" required>
+            <label for="tamanho">Tamanho da Forma</label>
+            <input type="text" id="tamanho" name="tamanho" required>
 
-                <label for="cor">Cor</label>
-                <input type="text" id="cor" name="cor" required>
+            <label for="cor">Cor</label>
+            <input type="text" id="cor" name="cor" required>
 
-                <label for="estado_prod">Estado do Item</label>
-                <input type="text" id="estado_prod" name="estado_prod" required>
+            <label for="estado_prod">Estado do Item</label>
+            <input type="text" id="estado_prod" name="estado_prod" required>
 
-                <label for="whatsapp">WhatsApp para Contato</label>
-                <input type="text" id="whatsapp" name="whatsapp" placeholder="Digite o número com DDD">
+            <label for="whatsapp">WhatsApp para Contato</label>
+            <input type="text" id="whatsapp" name="whatsapp" placeholder="Digite o número com DDD">
+        </div>
 
-                <label for="imagem" class="file-upload"><img src="../img/upload.png" alt="Carregar imagem" class="upload-icon"></label>
-                <input type="file" id="imagem" name="imagem" accept="image/*" required>
-             
-            </div>
-            <button type="submit">Postar Item</button>
-
+        <label for="imagem" class="file-upload"><img src="../img/upload.png" alt="Carregar imagem" class="upload-icon"></label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" required>
+        
+        <button type="submit">Postar Item</button>
+    </form>
+</div>
 </body>
        </html>
