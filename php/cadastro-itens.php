@@ -91,9 +91,6 @@ if (isset($_POST['whatsapp'])) {
 
             <label for="estado_prod">Estado do Item</label>
             <input type="text" id="estado_prod" name="estado_prod" required>
-
-            <label for="whatsapp">WhatsApp para Contato</label>
-            <input type="text" id="whatsapp" name="whatsapp" placeholder="Digite o número com DDD">
         </div>
 
         <label for="imagem" class="file-upload"><img src="../img/upload.png" alt="Carregar imagem" class="upload-icon"></label>

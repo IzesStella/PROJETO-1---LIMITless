@@ -195,12 +195,27 @@ margin: 0 auto;
 .logout-button {
     margin-top: 25px;
     padding: 5px 15px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #75AA71;
+    color: #FFF;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 100%;
+    top: 620px;
+    left: 850px;
+    padding: 15px;
+    cursor: pointer; 
 }
+
+.logout-button:hover {
+    background-color: #636363;
+}
+
+a{
+    font-family: Roboto;
+
+}
+
 
 .products-section {
     margin-top: 60px;
@@ -215,22 +230,34 @@ margin: 0 auto;
 }
 
 .products-list {
-    display: flex;
-    justify-content: center; /* Centraliza os produtos horizontalmente */
-    flex-wrap: wrap;
-    gap: 40px; /* Adiciona espaço entre os itens */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px;
 }
 
 .product-item {
-    width: 150px;
-    text-align: center;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 8px; /* Reduzido o padding interno */
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    max-width: 250px; /* Limite de largura para itens menores */
 }
 
 .product-item img {
-    width: 100%;
-    border-radius: 10px;
-    background-color: #EAEAEA;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 4px; /* Borda mais suave */
+    margin-bottom: 8px; /* Menor espaço entre imagem e texto */
+}
+
+.product-item p {
+    margin: 4px 0; /* Menor margem para os textos */
+    font-size: 0.9em; /* Tamanho de fonte um pouco menor */
+    text-align: center;
 }
 
 .user-handle {
