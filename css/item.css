@@ -163,3 +163,8 @@ a{
     margin: 0;
     font-style: italic;
 }
+
+.texto-wpp {
+    font-family: Roboto;
+    font-size: 150%;
+}

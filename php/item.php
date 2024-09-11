@@ -8,7 +8,8 @@ if (isset($_GET['id'])) {
 
     try {
         // Consulta para obter os detalhes do produto
-        $stmt = $pdo->prepare("SELECT p.nome AS produto_nome, p.path_produto, p.tamanho, p.cor, p.estado_prod, u.nome AS usuario_nome, u.user AS usuario_user, u.telefone AS usuario_telefone FROM produtos p JOIN usuarios u ON p.usuario_id = u.id WHERE p.id = :id");        $stmt->bindParam(':id', $produto_id, PDO::PARAM_INT);
+        $stmt = $pdo->prepare("SELECT p.nome AS produto_nome, p.path_produto, p.tamanho, p.cor, p.estado_prod, u.nome AS usuario_nome, u.user AS usuario_user, u.telefone AS usuario_telefone FROM produtos p JOIN usuarios u ON p.usuario_id = u.id WHERE p.id = :id");
+        $stmt->bindParam(':id', $produto_id, PDO::PARAM_INT);
         $stmt->execute();
         $produto = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -57,17 +58,23 @@ if (isset($_GET['id'])) {
     <div class="product">
         <img src="../storage/<?php echo htmlspecialchars($produto['path_produto'] ?? ''); ?>" alt="<?php echo htmlspecialchars($produto['produto_nome'] ?? ''); ?>" class="product-image">
         <div class="product-details">
-        <h1 class="product-name"><?php echo htmlspecialchars($produto['produto_nome'] ?? ''); ?></h1>
-        <p class="product-detail">Tamanho: <?php echo htmlspecialchars($produto['tamanho'] ?? ''); ?></p>
-        <p class="product-detail">Cor: <?php echo htmlspecialchars($produto['cor'] ?? ''); ?></p>
-        <p class="product-detail">Estado: <?php echo htmlspecialchars($produto['estado_prod'] ?? ''); ?></p>
+            <h1 class="product-name"><?php echo htmlspecialchars($produto['produto_nome'] ?? ''); ?></h1>
+            <p class="product-detail">Tamanho: <?php echo htmlspecialchars($produto['tamanho'] ?? ''); ?></p>
+            <p class="product-detail">Cor: <?php echo htmlspecialchars($produto['cor'] ?? ''); ?></p>
+            <p class="product-detail">Estado: <?php echo htmlspecialchars($produto['estado_prod'] ?? ''); ?></p>
         </div>
     </div>
 
     <div class="user-info">
         <p class="user-item">Item de</p>
         <p class="user-name"><?php echo htmlspecialchars($produto['usuario_nome'] ?? ''); ?></p>
-        <p class="user-phone"><?php echo htmlspecialchars($produto['usuario_telefone'] ?? ''); ?></p>
+        <!-- Ícone para o WhatsApp -->
+        <p class="user-whatsapp">
+            <a href="https://wa.me/<?php echo htmlspecialchars(preg_replace('/\D/', '', $produto['usuario_telefone'])); ?>" target="_blank">
+                 <img src="../img/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+            </a>
+            <span class="texto-wpp">Fale comigo no WhatsApp</span>
+        </p>
         <p class="user-handle">@<?php echo htmlspecialchars($produto['usuario_user'] ?? ''); ?></p>
     </div>
 </body>
