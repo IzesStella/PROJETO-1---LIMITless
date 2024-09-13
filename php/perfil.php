@@ -56,7 +56,7 @@ try {
     $produtos = $stmtProdutos->fetchAll(PDO::FETCH_ASSOC);
 
     // Define o caminho da imagem do usuário
-    $imagemPath = !empty($usuario['PATH_USUARIO']) ? '/storage/' . $usuario['PATH_USUARIO'] : '/storage/placeholder.png';
+    $imagemPath = !empty($usuario['PATH_USUARIO']) ? '/storage/' . $usuario['PATH_USUARIO'] : '/storage/profile.png';
 
 } catch (PDOException $e) {
     echo "Erro na consulta: " . $e->getMessage();

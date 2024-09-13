@@ -1,6 +1,8 @@
 <?php
 session_start();
 require_once './authenticate.php';
+session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -23,10 +25,10 @@ require_once './authenticate.php';
 
         <nav>
         <ul>
-                <?php if (isset($_SESSION['username_id'])): ?>
-                    <li><a href="#">Chat</a></li>
-                    <li><a href="#">Perfil</a></li> 
-                    <li><a href="/php/logout.php">Logout (<?= $_SESSION['user'] ?>)</a></li>
+        <?php if (isset($_SESSION['user_id'])): ?>
+                    <li><a href="/php/sobrenos.php"><img src="../img/about.png" alt="Sobre Icon"></a></li> 
+                    <li><a href="/php/cadastro-itens.php"><img src="../img/addproduto.png" alt="Produto Icon"></a></li> 
+                    <li><a href="/php/perfil.php"><img src="../img/perfillogo.png" alt="Perfil Icon"></a></li>
                 <?php else: ?>
                     <li><a href="/php/sobrenos.php">Sobre Nós</a></li>
                     <li><a href="/php/entrar.php">Entrar</a></li> 

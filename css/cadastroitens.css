@@ -1,6 +1,7 @@
 body{
     background-color:#FAF6F4; 
     overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header{
@@ -77,8 +78,6 @@ li{
 
 li a { 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    font-style: normal;
     font-weight: 400;
     color: #000;
     line-height: normal;
@@ -87,7 +86,7 @@ li a {
 
 a{
     color: #4F744C;
-    font-family: Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -100,24 +99,6 @@ a:hover {
     text-decoration: underline; 
 }
 
-.nav-icon {
-    width: 35px;
-    height: 35px;
-    display: block;
-    margin-right: 30px;
-}
-
-.fav-icon{
-    width: 40px;
-    height: 35px;
-}
-
-.chat-icon{
-    width: 43px;
-    height: 43px;
-}
-
-
 .form-grupo {
     display: flex; 
     flex-direction: column; 
@@ -128,7 +109,7 @@ a:hover {
 
 .form-grupo label {
     color: #000;
-    font-family: Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     margin-bottom: 5px; 
 }
