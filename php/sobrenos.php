@@ -38,9 +38,9 @@ require_once './authenticate.php';
 
     <div class="desenvolvedores">
         <div class="card">
-            <img src="/img/dyvamia.jpg" alt="IzesStella">
+            <img src="../img/izes.jpg" alt="IzesStella">
             <div class="card-content">
-                <h2>Izes Linda</h2>
+                <h2>Izes Stella</h2>
                 <div class="link">
                     <a href="https://www.instagram.com/izesstella/">
                         <img src="/img/instalogo.png" alt="logoinsta" class="insta-logo">
@@ -50,7 +50,7 @@ require_once './authenticate.php';
         </div>
 
         <div class="card">
-            <img src="/img/dyvamia.jpg" alt="Mari">
+            <img src="/img/mariana.jpeg" alt="MarianaTavares">
             <div class="card-content">
                 <h2>Mariana Tavares</h2>
                 <div class="link">
@@ -62,7 +62,7 @@ require_once './authenticate.php';
         </div>
 
         <div class="card">
-            <img src="/img/dyvamia.jpg" alt="Lucas">
+            <img src="/img/lucas.jpeg" alt="LucasAmaro">
             <div class="card-content">
                 <h2>Lucas Amaro</h2>
                 <div class="link">
@@ -74,7 +74,7 @@ require_once './authenticate.php';
         </div>
 
         <div class="card">
-            <img src="/img/dyvamia.jpg" alt="Isabelly">
+            <img src="/img/isabelly.jpeg" alt="IsabellyArruda">
             <div class="card-content">
                 <h2>Isabelly Arruda</h2>
                 <div class="link">
@@ -86,7 +86,7 @@ require_once './authenticate.php';
         </div>
 
         <div class="card">
-            <img src="/img/dyvamia.jpg" alt="Talita">
+            <img src="/img/talita.jpeg" alt="TalitaVitoria">
             <div class="card-content">
                 <h2>Talita Vitória</h2>
                 <div class="link">

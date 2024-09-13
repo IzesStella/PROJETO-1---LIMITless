@@ -1,6 +1,7 @@
 body{
-        background-color:#FAF6F4; 
-         overflow-x: hidden;
+    background-color:#FAF6F4; 
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header{
@@ -99,15 +100,14 @@ a:hover {
 }
 
 .Banner-item{
-    position: absolute;
-    top: 40%;
+    position: absolute; 
+    top: 30%;
     left: 50%;
     width: 110%;
     height: auto;
     transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
     width: 90%; /* Ajuste a largura conforme necessário */
     align-items: center;
-    position: absolute;
 }
 
 .Banner-item img {
